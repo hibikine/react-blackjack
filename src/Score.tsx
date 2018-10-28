@@ -35,7 +35,7 @@ export const Score = ({
         {dealerResult.sum}
       </p>
       {playerResult.sum > 21 && <p>バースト!</p>}
-      {playerResult.sum === 21 && <p>ブラックジャック!</p>}
+      {playerResult.isNatural && <p>ブラックジャック!</p>}
       <p>
         <WinnerText playerValue={playerValue} dealerValue={dealerValue} />
       </p>
